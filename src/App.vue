@@ -136,6 +136,11 @@ html {
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -151,6 +156,8 @@ body {
   background-position: bottom;
   transition: 0.4s;
   background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
 }
 
 #app.clear {
