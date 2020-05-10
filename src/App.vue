@@ -1,7 +1,7 @@
 <template>
   <div
     id="app"
-    :class="typeof weatherData.main == 'undefined' ? 'sunny' : weatherData.weather[0].main == 'Clear' ? 'clear' : weatherData.weather[0].main == 'Rain' ? 'rain' : weatherData.weather[0].main == 'Clouds' ? 'clouds' : weatherData.weather[0].main == 'Thunderstorm' ? 'thunder' : weatherData.weather[0].main == 'Haze' ? 'haze' : 'snow'"
+    :class="typeof weatherData.main == 'undefined' ? 'sunny' : weatherData.weather[0].main == 'Clear' ? 'clear' : weatherData.weather[0].main == 'Rain' ? 'rain' : weatherData.weather[0].main == 'Clouds' ? 'clouds' : weatherData.weather[0].main == 'Thunderstorm' ? 'thunder' : weatherData.weather[0].main == 'Haze' ? 'haze' : weatherData.weather[0].main == 'Drizzle' ? 'drizzle' : weatherData.weather[0].main == 'Mist' ? 'mist' : 'thunder'"
   >
     <main>
       <div class="search-box">
@@ -77,9 +77,13 @@ export default {
 
       if (status.toLowerCase() == "thunderstorm") return "Thunderstorm ⚡";
 
-      if (status.toLowerCase() == "haze") return "Haze 🌫";
+      if (status.toLowerCase() == "haze") return "Haze 🌁";
 
       if (status.toLowerCase() == "snow") return "Snow Snow Snow ❄⛄";
+
+      if (status.toLowerCase() == "mist") return "Mist 🌫";
+
+      if (status.toLowerCase() == "drizzle") return "Drizzle 🌦";
 
       return status;
     },
@@ -169,18 +173,12 @@ body {
   background-image: url('./assets/haze.jpg');
 }
 
-#app.normal {
-  background-image: url("./assets/sunny.jpg");
-  background-size: cover;
-  background-position: bottom;
-  transition: 0.4s;
+#app.mist {
+  background-image: url('./assets/mist.jpg');
 }
 
-.normal {
-  background-image: url("./assets/sunny.jpg");
-  background-size: cover;
-  background-position: bottom;
-  transition: 0.4s;
+#app.drizzle {
+  background-image: url('./assets/drizzle.jpg');
 }
 
 main {
