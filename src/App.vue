@@ -145,6 +145,9 @@ body {
 #app {
   background-image: url("./assets/sunny.jpg");
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-position: bottom;
   transition: 0.4s;
   background-repeat: no-repeat;
