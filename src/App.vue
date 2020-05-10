@@ -147,6 +147,7 @@ body {
   background-size: cover;
   background-position: bottom;
   transition: 0.4s;
+  background-repeat: no-repeat;
 }
 
 #app.clear {
