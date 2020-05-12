@@ -1,20 +1,41 @@
-# vuether
+# vuether [As in Vue + Weather] 🌦
 
-## Project setup
+## Clone the project 👥
+```
+git clone https://github.com/kashifulhaque/vuether.git
+```
+
+### Move into the "vuether" directory 📂
+```
+cd vuether
+```
+
+### Install all the dependencies 📃
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
+or
 ```
-npm run serve
+yarn install
 ```
 
-### Compiles and minifies for production
+### API Key 🔑
+Go to ```config.json``` and replace my API Key or you may continue to use my key as well. Get your own API Key here: https://openweathermap.org/api
+
+### Starting in development 🤖
+```
+npm start
+```
+or
+```
+yarn start
+```
+
+### Build to deploy for production 🚀
 ```
 npm run build
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-# vuether
+or
+```
+yarn build
+```
