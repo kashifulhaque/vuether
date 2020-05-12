@@ -1,5 +1,10 @@
 # vuether [As in Vue + Weather] 🌦
 
+> Demo (Works better in portrait orientation)
+• [Netlify](https://vue-ther.netlify.app)
+• [Veercel/Now](https://vuether.now.sh)
+• [Firebase](https://vue-ther.web.app)
+
 ## Clone the project 👥
 ```
 git clone https://github.com/kashifulhaque/vuether.git
