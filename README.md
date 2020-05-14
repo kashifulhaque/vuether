@@ -4,6 +4,7 @@
 
 • [Netlify](https://vue-ther.netlify.app)
 • [Vercel/Now](https://vuether.now.sh)
+• [vuether.ifkash.xyz](https://vuether.ifkash.xyz)
 
 ## Clone the project 👥
 ```
@@ -44,3 +45,6 @@ or
 ```
 yarn build
 ```
+
+### Credits
+> Tutorial followed: https://youtu.be/JLc-hWsPTUY
