@@ -4,7 +4,6 @@
 
 • [Netlify](https://vue-ther.netlify.app)
 • [Vercel/Now](https://vuether.now.sh)
-• [Firebase](https://vue-ther.web.app)
 
 ## Clone the project 👥
 ```
