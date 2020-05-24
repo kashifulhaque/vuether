@@ -1,7 +1,7 @@
 <template>
   <div
     id="app"
-    :class="typeof weatherData.main == 'undefined' ? 'sunny' : weatherData.weather[0].main == 'Clear' ? 'clear' : weatherData.weather[0].main == 'Rain' ? 'rain' : weatherData.weather[0].main == 'Clouds' ? 'clouds' : weatherData.weather[0].main == 'Thunderstorm' ? 'thunder' : weatherData.weather[0].main == 'Haze' ? 'haze' : weatherData.weather[0].main == 'Drizzle' ? 'drizzle' : weatherData.weather[0].main == 'Mist' ? 'mist' : 'thunder'"
+    :class="typeof weatherData.main == 'undefined' ? 'thunder' : weatherData.weather[0].main == 'Clear' ? 'clear' : weatherData.weather[0].main == 'Rain' ? 'rain' : weatherData.weather[0].main == 'Clouds' ? 'clouds' : weatherData.weather[0].main == 'Thunderstorm' ? 'thunder' : weatherData.weather[0].main == 'Haze' ? 'haze' : weatherData.weather[0].main == 'Drizzle' ? 'drizzle' : weatherData.weather[0].main == 'Mist' ? 'mist' : weatherData.weather[0].main == 'Dust' ? 'dust'  : 'mist'"
   >
     <main>
       <div class="search-box">
@@ -92,6 +92,8 @@ export default {
 
       if (status.toLowerCase() == "drizzle") return "Drizzle 🌦";
 
+      if (status.toLowerCase() == "dust") return "Dust 🌪";
+
       return status;
     },
   },
@@ -161,6 +163,10 @@ body {
 
 #app.drizzle {
   background-image: url('./assets/drizzle.jpg');
+}
+
+#app.dust {
+  background-image: url('./assets/dust.jpg');
 }
 
 main {
