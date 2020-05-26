@@ -6,45 +6,32 @@
 • [Vercel/Now](https://vuether.now.sh)
 • [vuether.ifkash.xyz](https://vuether.ifkash.xyz)
 
+### Deploy to Vercel
+[![Deploy to Vercel](/button)](/import/project?template=https://github.com/kashifulhaque/vuether)
+
 ## Clone the project 👥
-```
-git clone https://github.com/kashifulhaque/vuether.git
-```
+`git clone https://github.com/kashifulhaque/vuether.git`
 
 ### Move into the "vuether" directory 📂
-```
-cd vuether
-```
+`cd vuether`
 
 ### Install all the dependencies 📃
-```
-npm install
-```
+`npm install`
 or
-```
-yarn install
-```
+`yarn install`
 
 ### API Key 🔑
 Go to ```config.json``` and replace my API Key or you may continue to use my key as well. Get your own API Key here: https://openweathermap.org/api
 
 ### Starting in development 🤖
-```
-npm start
-```
+`npm start`
 or
-```
-yarn start
-```
+`yarn start`
 
 ### Build to deploy for production 🚀
-```
-npm run build
-```
+`npm run build`
 or
-```
-yarn build
-```
+`yarn build`
 
 ### Credits
 > Tutorial followed: https://youtu.be/JLc-hWsPTUY
