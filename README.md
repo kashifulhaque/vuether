@@ -9,7 +9,8 @@
 ### Deploy to Vercel
 [![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/kashifulhaque/vuether)
 
-## Clone the project 👥
+## How do I get my hands dirty with the source code? 👨‍💻
+### Clone the project 👥
 `git clone https://github.com/kashifulhaque/vuether.git`
 
 ### Move into the "vuether" directory 📂
