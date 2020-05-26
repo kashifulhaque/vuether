@@ -7,7 +7,7 @@
 • [vuether.ifkash.xyz](https://vuether.ifkash.xyz)
 
 ### Deploy to Vercel
-[![Deploy to Vercel](/button)](/import/project?template=https://github.com/zeit/now/tree/master/examples/gatsby)
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/kashifulhaque/vuether)
 
 ## Clone the project 👥
 `git clone https://github.com/kashifulhaque/vuether.git`
