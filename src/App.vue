@@ -121,6 +121,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Jost", sans-serif;
+  background-color: #363636;
 }
 
 #app {
@@ -131,6 +132,13 @@ body {
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  #app {
+    width: 30vw;
+  }
 }
 
 #app.clear {
