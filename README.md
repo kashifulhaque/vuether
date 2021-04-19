@@ -2,9 +2,7 @@
 
 > Demo (Works better in portrait orientation)
 
-• [Netlify](https://vue-ther.netlify.app)
 • [Vercel/Now](https://vuether.now.sh)
-• [vuether.ifkash.xyz](https://vuether.ifkash.xyz)
 
 ### Deploy to Vercel
 [![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/kashifulhaque/vuether)
