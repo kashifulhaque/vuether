@@ -28,7 +28,13 @@
         <div class="weather-box">
           <div class="temp">
             {{ Math.round(weatherData.main.temp) }}°C
-            <div class="feels-like">Feels like {{ Math.round(weatherData.main.feels_like) }}°C</div>
+            <div class="feels-like">
+              Feels like {{ weatherData.main.feels_like }}°C
+              <br />
+              Min: {{ weatherData.main.temp_min }}°C
+              •
+              Max: {{ weatherData.main.temp_max }}°C
+            </div>
             </div>
           <div class="weather">
             {{ getWeatherStatus(weatherData.weather[0]) }}
@@ -70,31 +76,22 @@ export default {
       }
     },
     setData(res) {
-      console.log(res);
       this.weatherData = res;
     },
     getWeatherStatus(city) {
       const status = city.main;
-
-      if (status.toLowerCase() == "clear") return "Clear skies ☀";
-
-      if (status.toLowerCase() == "clouds") return "Clouds... ☁";
-
-      if (status.toLowerCase() == "rain") return "Rain 🌧";
-
-      if (status.toLowerCase() == "thunderstorm") return "Thunderstorm ⚡";
-
-      if (status.toLowerCase() == "haze") return "Haze 🌁";
-
-      if (status.toLowerCase() == "snow") return "Snow Snow Snow ❄⛄";
-
-      if (status.toLowerCase() == "mist") return "Mist 🌫";
-
-      if (status.toLowerCase() == "drizzle") return "Drizzle 🌦";
-
-      if (status.toLowerCase() == "dust") return "Dust 🌪";
-
-      return status;
+      switch(status.toLowerCase()) {
+        case "clear": return "Clear skies ☀";
+        case "clouds": return "Clouds... ☁";
+        case "rain": return "Rain 🌧";
+        case "thunderstorm": return "Thunderstorm ⚡";
+        case "haze": return "Haze 🌁";
+        case "snow": return "Snow Snow Snow ❄⛄";
+        case "mist": return "Mist 🌫";
+        case "drizzle": return "Drizzle 🌦";
+        case "dust": return "Dust 🌪";
+        default: return status;
+      }
     },
   },
 };
@@ -232,14 +229,13 @@ main {
   text-align: center;
   opacity: 0.8;
   transition: 0.4s;
-  cursor: none;
 }
 
 .location-box .humidity:hover {
   font-family: 'Jost', sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 24px;
+  font-size: 18px;
   color: #282828;
   opacity: 1;
   background-color: #eec0c6;
@@ -264,7 +260,6 @@ main {
   border-radius: 16px;
   margin: 24px 0px;
   transition: 0.4s;
-  cursor: none;
   box-shadow: 3px 6px rgba(255, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
