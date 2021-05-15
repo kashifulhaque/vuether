@@ -22,7 +22,9 @@
           <div class="location">
             {{ weatherData.name }}, {{ weatherData.sys.country }}
           </div>
+          <a href="https://github.com/kashifulhaque/vuether" target="_blank" rel="noreferrer noopener">
           <div class="humidity">Humidity: {{ weatherData.main.humidity }}%</div>
+          </a>
         </div>
 
         <div class="weather-box">
