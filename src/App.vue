@@ -79,6 +79,7 @@ export default {
     },
     setData(res) {
       this.weatherData = res;
+      this.query = "";
     },
     getWeatherStatus(city) {
       const status = city.main;
