@@ -51,8 +51,6 @@
 </template>
 
 <script>
-import config from "../config.json";
-
 export default {
   name: "App",
   data() {
@@ -66,7 +64,7 @@ export default {
     fetchWeather(event) {
       if (event.key == "Enter" && this.query.length != 0) {
         fetch(
-          `${this.apiUrl}?q=${this.query}&units=metric&appid=${config.weatherApiKey}`
+          `${this.apiUrl}?q=${this.query}&units=metric&appid=${process.env.VUE_APP_API_KEY}`
         )
           .then((res) => {
             return res.json();
