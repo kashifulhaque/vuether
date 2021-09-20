@@ -33,9 +33,6 @@
             <div class="feels-like">
               Feels like {{ weatherData.main.feels_like }}°C
               <br />
-              Min: {{ weatherData.main.temp_min }}°C
-              •
-              Max: {{ weatherData.main.temp_max }}°C
             </div>
             </div>
           <div class="weather">
