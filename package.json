@@ -7,8 +7,8 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "core-js": "^3.17.3",
     "vue": "^3.2.34"
+    "core-js": "^3.22.5",
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.4",
